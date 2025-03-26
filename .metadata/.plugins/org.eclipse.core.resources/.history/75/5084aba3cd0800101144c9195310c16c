@@ -1,0 +1,45 @@
+package Pages;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+import POJO.palasibazar;
+import base.testdrive;
+
+
+public class palasibazarpage extends testdrive {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+	    browserLaunch();
+	    driver.manage().window().maximize();
+		driver.get("https://www.policybazaar.com/");	
+		palasibazar p = new palasibazar();
+		driver.manage().timeouts().implicitlyWait(5000,TimeUnit.SECONDS);
+		p.getClciktravel().click();
+		p.getSelectdate().click(); 
+		p.getSwitchdate();
+		Thread.sleep(2000);
+		p.getChoosedate().click();
+		Thread.sleep(2000);
+		p.getChooseenddate().click();
+		p.getDone().click();
+		WebElement tupcontry =  p.getTpyecountry();
+		tupcontry.sendKeys("Hong");
+		tupcontry.click();
+		p.getClickcountry().click();
+		
+		//add travel
+		
+		p.getAddtravel().click();
+		p.getCheck1();
+		Select dropdown = new Select(p.getSelectdrop());
+		dropdown.selectByIndex(1);		
+		WebElement checkradia = p.getSelectyes();
+		boolean value = checkradia.isSelected();
+		System.out.println(value);
+		p.getDone();
+		
+		}	
+}

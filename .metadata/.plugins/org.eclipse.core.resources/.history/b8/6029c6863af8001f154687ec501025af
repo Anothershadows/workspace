@@ -1,0 +1,16 @@
+package runner;
+
+import cucumber.api.CucumberOptions;
+
+
+	
+	@CucumberOptions ( features=("src/test/java/featutes/irda.feature"),
+	dryRun = Ture,
+	glue = "page",
+	snipts
+	
+	
+			public class Runner_irda {
+
+
+}

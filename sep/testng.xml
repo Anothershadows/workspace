@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite  name="Suite">
+  <test thread-count="5" name="Test">
+	  
+	  	<groups>
+		<run>
+			<include name="sanity"></include>
+		</run>
+	</groups>
+	
+    <classes>		 
+      <class name="amazon1.TC002uniccount"/>
+      <class name="amazon1.TC001popupaddcort"/>
+      <class name="flipcart1.TC001BuyMobile"/>
+      
+    
+    </classes>
+  </test> <!-- Test 
+  
+  amazon1/TC001popupaddcort.java
+  
+  -->
+</suite> <!-- Suite
+
+  <class name="flipcart1.TC003buyphone"/>
+      <class name="flipcart1.TC002phonecount"/>
+ -->

@@ -1,0 +1,88 @@
+package POJO;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import base.testdrive;
+
+
+public class palasibazar extends testdrive {
+	public void Login() {
+		this.driver = driver;
+	PageFactory.initElements(driver, this);
+	} 
+
+
+	public WebElement getClciktravel() {
+		return clciktravel;
+	}
+
+	public WebElement getTpyecountry() {
+		return tpyecountry;
+	}
+
+	public WebElement getClickcountry() {
+		return clickcountry;
+	}
+
+	public WebElement getSelectdate() {
+		return selectdate;
+	}
+
+	public WebElement getChoosedate() {
+		return choosedate;
+	}
+
+	public WebElement getDone() {
+		return done;
+	}
+
+
+	public void setClciktravel(WebElement clciktravel) {
+		this.clciktravel = clciktravel;
+	}
+
+
+	public void setTpyecountry(WebElement tpyecountry) {
+		this.tpyecountry = tpyecountry;
+	}
+
+
+	public void setClickcountry(WebElement clickcountry) {
+		this.clickcountry = clickcountry;
+	}
+
+
+	public void setSelectdate(WebElement selectdate) {
+		this.selectdate = selectdate;
+	}
+
+
+	public void setChoosedate(WebElement choosedate) {
+		this.choosedate = choosedate;
+	}
+
+
+	public void setDone(WebElement done) {
+		this.done = done;
+	}
+
+
+	@FindBy(xpath = "//p[starts-with(text(),'Travel')]")
+	private WebElement clciktravel;
+	
+	@FindBy(id="id=\"country\"")
+	private WebElement tpyecountry;
+	
+	@FindBy(xpath="//li[contains(text(),'Hong Kong')]")
+	private WebElement clickcountry;
+	
+	@FindBy(xpath="//span[starts-with(text(), 'Start date')]")
+	private WebElement selectdate;
+	
+	@FindBy(xpath="//button[@aria-label='Mar 21, 2025']")
+	private WebElement choosedate;
+	
+	@FindBy(css="button.travel_main_cta:contains(\"Done\")")
+	private WebElement done;
+
+}

@@ -1,0 +1,54 @@
+package Automation.Automationqa;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
+public class Palasibazar{ 
+	
+static WebDriver driver;
+
+	public static void main(String[] args) {
+		//open browser
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		//get url
+		driver.get("https://www.policybazaar.com/");
+		//windows max
+		driver.manage().window().maximize();
+		//get current url
+		driver.getCurrentUrl();
+		//select screen
+		driver.findElement(By.xpath("//a[normalize-space(text())='Insurance Products']")).click();
+		// mouse action
+		driver.findElement(By.xpath("//a[normalize-space(text())='Insurance Products']")).click();
+		//move other element 
+		driver.findElement(By.xpath("(//div[@class='ruby-col-3 hidden-md']//span)[2]")).click();
+		//navigate to old windows
+		driver.navigate().back();
+		//click tratel
+		driver.switchTo().defaultContent();
+		//select travel insurance
+	 	driver.findElement(By.xpath("//p[contains(.,'Travel Insurance')]")).click();
+	 	//select calender
+	 	//driver.findElement(By.xpath("(//div[@class='newPq_duration_wrap__dateCol']//span)[1]")).click();
+	 	//driver.findElement(By.xpath("//span[normalize-space(text())='Start date']")).click();
+	 	//choosedate	
+	 	//driver.switchTo().frame(1);
+	 	//driver.findElement(By.xpath("(// p[contains(.,'Start date')]")).click();
+	 	//Locate the "Start date" element by using the span text within the div with the class name
+	 	//driver.findElement(By.xpath("//p[contains(.,'Start date ')]")).click();
+	 	//Scroll into view if needed
+	 	//driver.execute_script("arguments[0].scrollIntoView(true);", start_date_element);
+	 	//tagname[text()='exact text']
+	 	
+	 	driver.findElement(By.xpath("//span[normalize-space(text())='Start date']")).click();
+		driver.findElement(By.xpath("//span[text()='Start date']")).click();
+		WebElement g  = driver.findElement(By.xpath("//button[@aria-label='Oct 10, 2024']"));
+		g.click();
+		
+		
+	}
+}
+

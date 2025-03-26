@@ -1,0 +1,23 @@
+package Automation.Automationqa;
+
+public class Java implements Bank{
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+	@Override
+	public void bankloan() {
+		System.out.println("loan");
+		
+	}
+
+	@Override
+	public void freeloan() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+package Pages;
+import POJO.palasibazar;
+import base.testdrive;
+
+public class palasibazarpage extends testdrive {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+	    browserLaunch();
+		driver.get("https://www.policybazaar.com/");	
+
+		palasibazar p = new palasibazar();
+		p.getClciktravel().click();
+		Thread.sleep(3000);
+		p.getSelectdate().click();
+		p.getChoosedate().click();
+		p.getTpyecountry().click();
+		p.getClickcountry().click();
+		
+		}	
+}

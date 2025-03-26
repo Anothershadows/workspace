@@ -1,0 +1,20 @@
+package Pages;
+import POJO.palasibazar;
+import base.testdrive;
+
+public class palasibazarpage extends testdrive {
+
+	public static void main(String[] args) {
+		
+	    browserLaunch();
+		driver.get("https://www.policybazaar.com/");	
+
+		palasibazar p = new palasibazar();
+		p.getClciktravel().click();
+		p.getSelectdate().click();
+		p.getChoosedate().click();
+		p.getTpyecountry().click();
+		p.getClickcountry().click();
+		
+		}	
+}

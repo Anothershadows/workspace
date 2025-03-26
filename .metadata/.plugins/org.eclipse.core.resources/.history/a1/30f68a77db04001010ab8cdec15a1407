@@ -1,0 +1,23 @@
+package Pages;import org.openqa.selenium.chrome.ChromeDriver;
+
+import POJO.palasibazar;
+import base.testdrive;
+
+public class palasibazarpage extends testdrive {
+
+	public static void main(String[] args) {
+		
+		public void userClickOnLoginButtonq1() {
+		testdrive r = new testdrive();
+		r.browserLaunch();
+		driver.get("https://www.policybazaar.com/");
+	
+		palasibazar p = new palasibazar();
+		p.getClciktravel().click();
+		p.getSelectdate().sendKeys("honghong");
+		p.getClickcountry().click();
+		p.getChoosedate().click();
+		p.getSelectdate().click();
+		p.getDone().click();
+		}	
+}

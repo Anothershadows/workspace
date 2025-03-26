@@ -1,0 +1,12 @@
+package sanityflow;
+
+public class TC001loginpage  {
+	public static void main(String[] args) { 
+	// void logintest() {
+	
+	loginpageaction lo = new loginpageaction();
+	lo.Emailid("claimapplysec@infotech-hrsoftware.com.my");
+	lo.password("Info@123");
+	lo.click();
+}
+}

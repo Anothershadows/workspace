@@ -1,0 +1,24 @@
+package Pages;
+import org.openqa.selenium.By;
+
+import POJO.palasibazar;
+import base.testdrive;
+
+public class palasibazarpage extends testdrive {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+	    browserLaunch();
+		driver.get("https://www.policybazaar.com/");	
+
+		palasibazar p = new palasibazar();
+		p.getClciktravel().click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//section[@id='modal-root']"));
+		p.getSelectdate().click();
+		p.getChoosedate().click();
+		p.getTpyecountry().click();
+		p.getClickcountry().click();
+		
+		}	
+}

@@ -10,20 +10,19 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class LoginStep extends reusable {
+public class LoginStep extends reusable { 
 
 	@Given("user should navigate to the application")
 	public void userShouldNavigateToTheApplication() {
-		reusable r = new reusable();
-		r.browserLaunch();
-		r.launchurl("https://www.flipkart.com/");
-		r.toMaximize(driver);
+		browserLaunch();
+		launchurl("https://www.flipkart.com/");
+		toMaximize(driver);
 
 	}
 
 	@Given("User clicks on the login button")
 	public void userClickOnLoginButton() {
-		reusable r = new reusable();
+	//	reusable r = new reusable();
 		Login l = new Login();
 		l.getProfileclick().click();
 	

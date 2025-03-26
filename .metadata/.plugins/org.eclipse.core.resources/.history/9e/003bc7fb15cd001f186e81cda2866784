@@ -1,0 +1,236 @@
+package Automation.Automationqa;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import com.google.common.io.Files;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class reusable {
+	
+	public static WebDriver driver;
+	public static Actions ac;
+
+	//browser lunch
+	public static void browser() {
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+	}
+	//get url methog
+	public static void 	launchurl(String url) {
+		driver.get(url);
+	}
+	//windows maximusmax
+    public static void windowsmax(WebDriver driver) {
+	driver.manage().window().maximize();
+	}
+    
+    //Delete Cookies
+    public static void deletecookies() {
+    	driver.manage().deleteAllCookies();
+     }
+    //get paage url
+    public static String pageTitle() {
+    	String title = driver.getCurrentUrl();
+    	return title;
+    }
+    //passing text to particular field
+    public static void tofill(WebElement element, String value) {
+    	element.sendKeys(value);
+    }
+    //click login or submit button
+    public static void toclick(WebElement element) {
+    	element.click(); 	
+    }
+    //close the browser
+    public static void closebrowser() {
+    	driver.quit();
+    }
+    //isenable
+    public static void tocheckable(WebElement element) {
+    	boolean enable = element.isEnabled();
+    }
+    //isdesplay
+    public static void tocheckdespplay(WebElement element) {
+    	boolean Displayed = element.isDisplayed();
+    }
+    //tocheckselected
+    public static void isselected(WebElement element) {
+    	boolean selcted = element.isSelected();
+    }
+    //tonavigateurl
+    public static void tonavigateurl(String value) {
+    	driver.navigate().to(value);
+    }
+  //toforward
+    public static void toforward() {
+    	driver.navigate().forward();
+    }
+  //tobackword
+    public static void tobackword() {
+    	driver.navigate().back();
+    }
+    //torefresh
+    public static void torefresh() {
+    	driver.navigate().refresh();
+    }
+    //get perticulat text
+    public static String togettex(WebElement element) {
+    	String text = element.getText();
+    	return text; 	
+    }
+    //get the attribute value
+    public static String  getattribute(WebElement element) {
+    	String Attribute = element.getAttribute("value");
+    	return Attribute;
+    }
+    
+    // move the cursor one element to another
+    public static void tomovethecursor(WebElement element) {   	
+     ac = new Actions(driver);
+     ac.moveToElement(element).perform();  
+    }
+    //double click the element 
+    public static void{
+    	
+    }
+    //double click the element
+ public static void{
+    	
+    }
+    //right click the element 
+ public static void{
+ 	
+    }
+    //release the key
+ public static void{
+ 	
+ }
+ //press the key
+ public static void{
+ 	
+ }
+ 
+ //robot class missing 
+ //26-42
+ 
+ //toacceptalert
+ public static void{
+ 	
+ }
+ //toDismissAlert
+ public static void{
+ 	
+ }
+ //tosendkeysalert
+ public static void{
+ 	
+ }
+ //passvalue in field using javascript
+ public static void{
+ 	
+ }
+ //click the button using javascript
+ public static void{
+ 	
+ }
+ //scroll the pageup value using javascript
+ public static void{
+ 	
+ }
+//scroll the pagedown value using javascript
+ public static void{
+ 	
+ }
+ //select the element by index
+ public static void{
+ 	
+ }
+ //select the element by value
+ public static void{
+ 	
+ }
+//select the element using text
+ public static void{
+ 	
+ }
+ //select multiple element
+ public static void{
+ 	
+ }
+ //deselct all element
+ public static void{
+ 	
+ }
+ //deselct all element by index
+ public static void{
+ 	
+ }
+ //deselct all element by its value
+ public static void{
+ 	
+ }
+ //deselct all element by its visible test
+ public static void{
+ 	
+ }
+ //selct all element by using list
+ public static void{
+ 	
+ }
+ //to get option by using list
+ public static void{
+ 	
+ }
+ //select all select option using list
+ public static void{
+ 	
+ }
+ //select first option
+ public static void{
+ 	
+ }
+ 
+ //to get window handle
+ public static void{
+ 	
+ }
+ //to get window handles
+ public static void{
+ 	
+ }
+ //to windows handles
+ public static void{
+ 	
+ }
+ //tomultiplewindow
+ public static void{
+ 	
+ }
+ //waite method
+ public static void{
+ 	
+ }
+ //scrolldownjavascript
+ public static void{
+ 	
+ }
+ 
+ //take screen shot option   		
+    public void screenshot( WebDriver driver) throws IOException {
+    File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+    Files.copy(file,new File("C:\\Users\\gokul\\Pictures\\Screenshots\\m.jpg")); 
+    System.out.println("Screenshot taken and saved to C:\\Users\\gokul\\Pictures\\Screenshots\\mm.jpg");
+    		     
+    		}
+    	
+    }
+

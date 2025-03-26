@@ -1,0 +1,30 @@
+package Pages;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import POJO.palasibazar;
+import base.testdrive;
+import junit.framework.Assert;
+
+public class palasibazarpage extends testdrive {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+	    browserLaunch();
+		driver.get("https://www.policybazaar.com/");	
+
+		palasibazar p = new palasibazar();
+		p.getClciktravel().click();
+		Thread.sleep(3000);
+		p.getSelectdate().click(); 
+		driver.findElement(By.xpath("//section[@id='root']"));
+		
+		p.getChoosedate().click();
+		p.getDone().click();
+        WebElement errorMessage = driver.findElement(By.className("errorMsg"));
+        Assert.assertEquals(errorMessage.getText().trim(), "Please select end date", "Error message not displayed correctly");
+		p.getTpyecountry().click();
+		p.getClickcountry().click();
+		
+		}	
+}
