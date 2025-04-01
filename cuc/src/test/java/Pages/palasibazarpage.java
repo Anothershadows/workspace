@@ -2,6 +2,7 @@ package Pages;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
 import POJO.palasibazar;
 import base.testdrive;

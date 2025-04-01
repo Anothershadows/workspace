@@ -12,9 +12,10 @@ snippets = SnippetType.CAMELCASE,
 monochrome = false,
 plugin = {"pretty", "html:reports",
 		},
-tags={"@smoke"}
+tags = {"@smoke"}
 
 )
+
 public class Runner extends AbstractTestNGCucumberTests {
 	  
 }

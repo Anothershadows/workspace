@@ -1,5 +1,7 @@
 package Pages;
 
+import org.testng.annotations.Test;
+
 import POJO.irdaPOJO;
 import base.reusable;
 import cucumber.api.java.en.Given;
