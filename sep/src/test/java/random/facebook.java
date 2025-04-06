@@ -1,0 +1,69 @@
+package random;
+
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class facebook {
+
+
+		
+		static WebDriver driver;
+
+		public static void main(String[] args)throws IOException{
+
+				WebDriverManager.chromedriver().setup();
+				driver = new ChromeDriver();
+				//maximuse windows
+				driver.manage().window().maximize();
+		   //get url
+				driver.get("https://www.facebook.com/");
+				String filelocation = "./Excel_read/Login_fb.xlsx";
+				XSSFWorkbook book = new XSSFWorkbook(filelocation); 
+				XSSFSheet Sheet = book.getSheetAt(0);			
+			
+			    int lastrow = Sheet.getLastRowNum();
+				System.out.println(lastrow);
+				
+				int phys = Sheet.getPhysicalNumberOfRows();
+				System.out.println(phys);
+				
+				short lastrowS = Sheet.getRow(0).getLastCellNum();
+				System.out.println(lastrowS);	   	
+						 
+						for (int i = 0; i < lastrow; i++) {
+							XSSFRow row = Sheet.getRow(i);				 
+						for (int j = 0; j < lastrowS; j++) {
+							XSSFCell cell = row.getCell(j);				
+						
+				DataFormatter dft = new DataFormatter();	
+				String value = dft.formatCellValue(cell);
+				System.out.println(value);
+				
+							//String value1 = cell.getStringCellValue();
+							//System.out.println(value1);
+						
+						}}
+					driver.close();
+				//click
+				driver.findElement(By.xpath("(//span[@class=\"_27h2j1\"])[2]")).click();
+				Actions a= new Actions(driver);
+				WebElement a1 = driver.findElement(By.xpath("//div[@class='_1UgUYI _2eN8ye']//div[1]//a[5]"));
+				a.moveToElement(a1).perform();
+				WebElement a2 = driver.findElement(By.xpath("//div[@class='_16rZTH']/following-sibling::div[1]//a[5]"));	 
+				a.moveToElement(a2).perform();
+				a2.click();
+			}
+
+		}

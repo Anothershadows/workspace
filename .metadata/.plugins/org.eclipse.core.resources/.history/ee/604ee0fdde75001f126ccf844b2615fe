@@ -1,0 +1,20 @@
+package sanityflow;
+
+import org.openqa.selenium.By;
+
+public class loginpageaction {
+	public void Emailid(String username) {
+		driver.findElement(By.id("txtLogin")).sendKeys(username);
+	}
+	public void password(String password) {
+		driver.findElement(By.id("txtPassword")).sendKeys(password);
+	}
+	public void click() {
+		driver.findElement(By.id("btnLogin")).click();
+	}
+	public void login(String Emailid,String password) {
+		Emailid("username");
+		password("password");
+	}
+	
+}

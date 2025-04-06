@@ -1,0 +1,15 @@
+Feature: Book cart application to add book
+
+  Scenario Outline: Add cart to the application
+  
+    Given User should navigate to the application
+    And User should login as "<username>" and "<password>"
+    And user searches for a "<book>"
+    When User adds the book to the cart
+    Then the cart badge should be updated
+
+  Examples:
+    | username | password | book    |
+    | ortoni   | pass1234 | Roomies |
+    | ortoni   | pass1234 | Harry Potter and the Deathly Hallows |
+    

@@ -1,0 +1,103 @@
+package Automation.Automationqa;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.google.common.io.Files;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class reusable {
+	
+	public static WebDriver driver;
+
+	//browser lunch
+	public static void browser() {
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+	}
+	//get url methog
+	public static void 	launchurl(String url) {
+		driver.get(url);
+	}
+	//windows maximusmax
+    public static void windowsmax(WebDriver driver) {
+	driver.manage().window().maximize();
+	}
+    
+    //Delete Cookies
+    public static void deletecookies() {
+    	driver.manage().deleteAllCookies();
+     }
+    //get paage url
+    public static String pageTitle() {
+    	String title = driver.getTitle();
+    	return title;
+    }
+    //passing text to particular field
+    public static void tofill(WebElement element, String value) {
+    	element.sendKeys(value);
+    }
+    //click login or submit button
+    public static void toclick(WebElement element) {
+    	element.click(); 	
+    }
+    //close the browser
+    public static void closebrowser() {
+    	driver.quit();
+    }
+    //isenable
+    public static void tocheckable(WebElement element) {
+    	boolean enable = element.isEnabled();
+    }
+    //isdesplay
+    public static void tocheckdespplay(WebElement element) {
+    	boolean Displayed = element.isDisplayed();
+    }
+    //tocheckselected
+    public static void isselected(WebElement element) {
+    	boolean selcted = element.isSelected();
+    }
+    //tonavigateurl
+    public static void tonavigateurl(String value) {
+    	driver.navigate().to(value);
+    }
+  //toforward
+    public static void toforward() {
+    	driver.navigate().forward();
+    }
+  //tobackword
+    public static void tobackword() {
+    	driver.navigate().back();
+    }
+    //torefresh
+    public static void torefresh() {
+    	driver.navigate().refresh();
+    }
+    //get perticulat text
+    public static String togettex(WebElement element) {
+    	String text = element.getText();
+    	return text; 	
+    }
+    //get the attribute value
+    public static String  getattribute(WebElement element) {
+    	String Attrib = element.getAttribute("value");
+    	return Attrib;
+    }
+    		
+    		
+    		public void screenshot( WebDriver driver) throws IOException {
+    			File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+    			 Files.copy(file,new File("C:\\Users\\gokul\\Pictures\\Screenshots\\m.jpg")); 
+    			 System.out.println("Screenshot taken and saved to C:\\Users\\gokul\\Pictures\\Screenshots\\mm.jpg");
+    		     
+    		}
+    	
+    }
+

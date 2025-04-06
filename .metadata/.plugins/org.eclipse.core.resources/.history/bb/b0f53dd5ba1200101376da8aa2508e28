@@ -1,0 +1,13 @@
+Feature: Palasibazar Travel Insurance Flow
+
+  Scenario: Apply for travel insurance
+    Given the user navigates to the application
+    And the user selects a travel date
+    And the user selects the destination place
+    When the user clicks the "Travel" button
+    And the user reads the policy details
+    Then the travel count should be displayed correctly
+    
+  
+
+ 

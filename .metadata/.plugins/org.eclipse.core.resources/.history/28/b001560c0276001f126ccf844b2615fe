@@ -1,0 +1,13 @@
+package sanityflow;
+
+public class TC001loginpage  {
+	public static void main(String[] args) { 
+	
+	
+	loginpageaction lo = new loginpageaction();
+	lo.geturl("https://infotech-cloudhr.com.sg/LoginV2.aspx?Session=True");
+	lo.Emailid("claimapplysec@infotech-hrsoftware.com.my");
+	lo.password("Info@123");
+	lo.click();
+}
+}

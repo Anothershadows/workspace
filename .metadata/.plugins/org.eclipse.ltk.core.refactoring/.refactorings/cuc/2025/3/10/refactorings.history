@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;POJO.irda&apos; to &apos;irdaPOJO&apos;&#x0D;&#x0A;- Original project: &apos;cuc&apos;&#x0D;&#x0A;- Original element: &apos;POJO.irda&apos;&#x0D;&#x0A;- Renamed element: &apos;POJO.irdaPOJO&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;irda&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;POJO{irda.java[irda" matchStrategy="1" name="irdaPOJO" qualified="false" references="true" similarDeclarations="false" stamp="1741044532476" textual="false" version="1.0"/>
+</session>

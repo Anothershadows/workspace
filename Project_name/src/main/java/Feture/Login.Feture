@@ -1,0 +1,34 @@
+Feature: BookCart application
+
+Scenario: Login should be success
+
+Given user should navigate to the application
+And User click on login button 
+And User enter the username as ortoni
+And User enter the password as pass1234
+When User clicks the login button
+Then login should be success
+
+Scenario: Login should be success
+
+Given user should navigate to the application
+And User click on login button 
+And User enter the username as gokul
+And User enter the password as pass
+When User clicks the login button
+But login should be fail
+
+Feature: Book cart application to add book
+
+  Scenario Outline: Add cart to the application
+  
+    Given User should navigate to the application
+    And User should login as "<username>" and "<password>"
+    And user searches for a "<book>"
+    When User adds the book to the cart
+    Then the cart badge should be updated
+
+  Examples:
+    | username | password | book                  |
+    | ortoni   | pass1234 | Roomies               |
+  

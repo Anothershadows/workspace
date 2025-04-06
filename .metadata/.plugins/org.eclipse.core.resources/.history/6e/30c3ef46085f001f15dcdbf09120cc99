@@ -1,0 +1,31 @@
+package Automation.Automationqa;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.cucumber.messages.types.Duration;
+
+public class flipcart_login 
+{
+	 public static void main(String[] args) 
+	 {
+	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\gokul\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+	     WebDriver driver = new  ChromeDriver();
+         driver.get("https://www.flipkart.com/");
+         driver.findElement(By.xpath("//span[@role='button']")).click();
+         driver.findElement(By.xpath("//input[@placeholder='Search for Products, Brands and More']")).sendKeys("mobile");
+}
+}	 
+         */*  WebDriverWait wait = new WebDriverWait(driver,
+      //  WebElement suggestionBox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("ul._1MRYA1")));
+
+         // Locate and click on the "mobile stand" suggestion
+       //  WebElement suggestion = suggestionBox.findElement(By.xpath("//li[contains(text(),'mobile stand')]"));
+       //  suggestion.click();*/*
+
+
+
