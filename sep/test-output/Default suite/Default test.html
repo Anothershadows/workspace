@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 11 21:40:22 IST 2025</td>
+<td>Started on:</td><td>Sun Apr 13 21:13:34 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (53 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15085 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,22 +76,41 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='random.Irtc.brows()'><b>brows</b><br>Test class: random.Irtc</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by @Test on method brows but has not been marked @Optional or defined
-in C:\Users\gokul\AppData\Local\Temp\testng-eclipse-1798965091\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:737)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:915)
+<td title='flipcart1.TC002phonecount.TC002phonecount002()'><b>TC002phonecount002</b><br>Test class: flipcart1.TC002phonecount</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b2ab5e94353a4947f69e90c181f8055d, getElementText {id=f.373EAFF0AE5AADC268D19E874BDA0389.d.485724070EB889461CD55CA098C51C58.e.550}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\gokul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58214}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58214/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b2ab5e94353a4947f69e90c181f8055d)] -&gt; xpath: //*[contains(text(), &apos;Phone&apos;)]]
+Session ID: b2ab5e94353a4947f69e90c181f8055d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at flipcart1.TC002phonecount.TC002phonecount002(TC002phonecount.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.testng.TestRunner.privateRun(TestRunner.java:819)
 	at org.testng.TestRunner.run(TestRunner.java:619)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
@@ -107,22 +126,41 @@ in C:\Users\gokul\AppData\Local\Temp\testng-eclipse-1798965091\testng-customsuit
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace119290689", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace119290689'><pre>org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by @Test on method brows but has not been marked @Optional or defined
-in C:\Users\gokul\AppData\Local\Temp\testng-eclipse-1798965091\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:737)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:915)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1274225913", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1274225913'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b2ab5e94353a4947f69e90c181f8055d, getElementText {id=f.373EAFF0AE5AADC268D19E874BDA0389.d.485724070EB889461CD55CA098C51C58.e.550}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\gokul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58214}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58214/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b2ab5e94353a4947f69e90c181f8055d)] -&gt; xpath: //*[contains(text(), &apos;Phone&apos;)]]
+Session ID: b2ab5e94353a4947f69e90c181f8055d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at flipcart1.TC002phonecount.TC002phonecount002(TC002phonecount.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.testng.TestRunner.privateRun(TestRunner.java:819)
 	at org.testng.TestRunner.run(TestRunner.java:619)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
@@ -139,8 +177,8 @@ in C:\Users\gokul\AppData\Local\Temp\testng-eclipse-1798965091\testng-customsuit
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>random.Irtc@175c2241</td></tr>
+<td>14</td>
+<td>flipcart1.TC002phonecount@139982de</td></tr>
 </table><p>
 </body>
 </html>

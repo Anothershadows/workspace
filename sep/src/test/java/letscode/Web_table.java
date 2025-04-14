@@ -17,12 +17,12 @@ public class Web_table {
 		driver.manage().window().maximize();
 		driver.get("https://letcode.in/table");
 		WebElement table = driver.findElement(By.id("simpletable"));
-		List<WebElement> headers = table.findElements(By.tagName("th"));
-		for (WebElement header : headers) {
-			String header12 = header.getText();
-			System.out.print(header12);
-		}
-		System.out.println();
+//		List<WebElement> headers = table.findElements(By.tagName("th"));
+//		for (WebElement header : headers) {
+//			String header12 = header.getText();
+//			System.out.print(header12);
+//		}
+//		System.out.println();
 		// Get all rows in the table
 		List<WebElement> allRows = table.findElements(By.tagName("tr"));
 //		for (WebElement row : allRows) {
@@ -49,7 +49,7 @@ public class Web_table {
 				
 break;
 			}
-		}
+		
 		driver.quit();
 	}
 }

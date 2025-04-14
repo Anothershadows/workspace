@@ -91,7 +91,7 @@ public class TC002phonecount extends reusable {
 		// Print the count of unique 'Phone' texts on the page
 		System.out.println("Count of unique 'Phone' text occurrences on the page: " + uniquePhoneTexts.size());
 
-		driver.quit();
+	//	driver.quit();
 
 	}
 }

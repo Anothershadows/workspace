@@ -1,6 +1,7 @@
 package random;
 
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +23,7 @@ public class coverall {
 		driver.manage().window().maximize();
 		
 		//launch url
-		driver.get("https://letcode.in/test");
+		driver.get("https://letcode.in/window");
 //		driver.navigate().to("https://letcode.in/edit");
 //		driver.navigate().back();
 //		driver.navigate().forward();
@@ -53,27 +54,41 @@ public class coverall {
 //		driver.findElement(By.xpath("(//div[@class='control']//button)[3]")).click();
 //		driver.switchTo().alert().sendKeys("tesr");
 //		driver.switchTo().alert().accept();
-		driver.navigate().to("https://letcode.in/dropdowns");
+//		driver.navigate().to("https://letcode.in/dropdowns");
 //		WebElement fruitdrop = driver.findElement(By.id("fruits"));
 //		
 //		Select s = new Select(fruitdrop);
 //		s.selectByIndex(3);
 		
-		 WebElement v = driver.findElement(By.id("superheros"));
-		 Select s = new Select(v);
-		 s.getAllSelectedOptions();
-	//	 s.getOptions();
+//		 WebElement v = driver.findElement(By.id("superheros"));
+//		 Select s = new Select(v);
+//		 s.getAllSelectedOptions();
+//	 s.getOptions();
 		 
 //		 s.selectByIndex(2);
 //		 s.selectByValue("ca");
 //		 s.selectByVisibleText("Batwoman");
 	
-			List<WebElement>  all = s.getOptions();		
-		for (WebElement W : all) {		
-			String text = W.getText();
-			System.out.println(text);		
-		} 
+//			List<WebElement>  all = s.getOptions();		
+//		for (WebElement W : all) {		
+//			String text = W.getText();
+//			System.out.println(text);		
+//		} 
+		driver.findElement(By.id("home")).click();
+	//	Set<String> windowHandles = driver.getWindowHandles();
 		
+
+		String parentid = driver.getWindowHandle();
+		 System.out.println("parentid:"+parentid);
+		 Set<String> Allid = driver.getWindowHandles();
+		 System.out.println("Allid:"+ Allid);
+		 Thread.sleep(5000);
+		 for (String e : Allid) {
+		 if(!Allid.equals(parentid)){
+		  driver.switchTo().window(parentid);}
+		 
+		 driver.findElement(By.xpath("(//footer[@class='card-footer']//a)[2]")).click();
+//		
 		
 		
 		

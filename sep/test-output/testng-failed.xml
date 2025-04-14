@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="random.Irtc">
+      <class name="flipcart1.TC002phonecount">
         <methods>
-          <include name="brows"/>
+          <include name="TC002phonecount002"/>
         </methods>
-      </class> <!-- random.Irtc -->
+      </class> <!-- flipcart1.TC002phonecount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
