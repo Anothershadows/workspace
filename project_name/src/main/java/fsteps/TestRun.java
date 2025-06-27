@@ -14,11 +14,10 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class TestRun {
-	
-RemoteWebDriver driver;
 
+	RemoteWebDriver driver;
 
-  @Given("user should navigate to the application") 
+	@Given("user should navigate to the application") 
   public void userShouldNavigateToTheApplication() 
   { driver = new ChromeDriver();
   driver.get("https://bookcart.azurewebsites.net/");
@@ -26,7 +25,7 @@ RemoteWebDriver driver;
   driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
   
   }
- 
+
 /*
  * @Given("User click on login button") public void userClickOnLoginButton() {
  * driver.findElement(By.xpath("(//span[@class='mdc-button__label'])[2]")).click
@@ -79,11 +78,3 @@ RemoteWebDriver driver;
  * 
  * 
  */
-
-
-
-
-
-
-
-

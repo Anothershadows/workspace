@@ -8,6 +8,7 @@ Feature: irda
     When select eserivce
     And select form 
     And select date 
+    And test
     Then click clear
 
   #@tag2

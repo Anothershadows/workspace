@@ -1,0 +1,16 @@
+package javaqa;
+
+public class rework {
+
+	public static void main(String[] args) {
+		int a = 13;
+		int b = 0;
+		for (int i = 1; i <= 13; i++) {
+			while (a % 2 ==1 ) {
+				b++;
+			}
+		}
+		if (b == 1) {System.out.println(a + " ia prime number");
+		}
+	}
+}

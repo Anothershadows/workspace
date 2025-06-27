@@ -1,0 +1,19 @@
+package java_workout;
+
+public class Armstrong {
+
+	public static void main(String[] args) {
+
+		int fa = 153;
+		int st = 0;
+		while (fa > 0) {
+			int n = fa % 10;
+			st = st + (n * n * n);
+			fa = fa / 10;
+		}
+
+		System.out.println(st+" isamstrong");
+
+	}
+
+}

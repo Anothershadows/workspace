@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <packages>
-    <package name="Pages"/>
-  </packages>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="cucumber.filter.tags" value="@smoke"/>
     <classes>
-      <class name="Pages.LoginStep">
+      <class name="runner.palasibar">
         <methods>
-          <include name="userClicksTheLoginButton"/>
-          <include name="userEnterTheUsername"/>
-          <include name="loginShouldBeSuccess"/>
-          <include name="userClickOnLoginButton"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- Pages.LoginStep -->
+      </class> <!-- runner.palasibar -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

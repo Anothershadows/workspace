@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="flipcart1.TC002phonecount">
+      <class name="amazon1.TC001popupaddcort">
         <methods>
-          <include name="TC002phonecount002"/>
+          <include name="TC001uniccount001"/>
         </methods>
-      </class> <!-- flipcart1.TC002phonecount -->
+      </class> <!-- amazon1.TC001popupaddcort -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

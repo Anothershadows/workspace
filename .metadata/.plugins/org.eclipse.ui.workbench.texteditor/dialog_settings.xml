@@ -6,28 +6,29 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="package Pages;"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="// Write code here that turns the phrase above into concrete actions"/>
+			<item value="throw new cucumber.api.PendingException();"/>
+			<item value="//"/>
 			<item value="package Pages;"/>
 			<item value="public"/>
 			<item value="webelement click"/>
 			<item value="date"/>
-			<item value="throw new cucumber.api.PendingException();"/>
-			<item value="// Write code here that turns the phrase above into concrete actions"/>
 			<item value="package Automation.Automationqa;"/>
 			<item value="driver.findElement(By.xpath(&quot;(//input[@type=&apos;checkbox&apos;])[1]&quot;) );"/>
 		</list>
 		<list key="replacehistory">
-			<item value="private"/>
 			<item value=""/>
+			<item value="private"/>
 			<item value="driver"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="762"/>
-		<item key="DIALOG_Y_ORIGIN" value="217"/>
-		<item key="DIALOG_WIDTH" value="414"/>
-		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_X_ORIGIN" value="656"/>
+		<item key="DIALOG_Y_ORIGIN" value="168"/>
+		<item key="DIALOG_WIDTH" value="472"/>
+		<item key="DIALOG_HEIGHT" value="487"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">

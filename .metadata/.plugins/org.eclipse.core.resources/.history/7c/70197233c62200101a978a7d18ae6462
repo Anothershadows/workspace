@@ -1,0 +1,115 @@
+package javaqa;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class ytres {
+
+	public static void main(String[] args) {
+
+
+
+
+//		String valuer = "hello";
+//		String rev = "";
+//		
+//		for (int i = valuer.length()-1; i>=0; i--) {
+//			
+//			rev=rev+valuer.charAt(i);
+//			
+//		}
+//		System.out.println(rev);
+
+//		 int [] ar = new int[5];
+//		 ar[0]=800;	
+//		 ar[1]=200;	
+//		 ar[2]=500;	
+//		 ar[3]=400;	
+//		 ar[4]=100;	 
+//		 
+//		 for(int i =0; i<ar.length;i++) {
+//			 for(int j =i+1; j<ar.length;j++) {
+//				 if(ar[i]>ar[j]) {
+//					 int temp = ar [i];
+//					 ar[i]=ar[j];
+//					 ar[j]=temp;
+//				 }
+//			 }
+//		 }
+//		 for(int i =0; i<ar.length;i++) {
+//		 System.out.println(ar[i]);
+//		 
+//		
+//		
+//		 }
+
+//		int[] ar = new int[5];
+//		ar[0] = 100;
+//		ar[1] = 100;
+//		ar[2] = 100;
+//		ar[3] = 300;
+//		ar[4] = 400;
+//		Set<Integer> dupe = new LinkedHashSet<Integer>();
+//		for (int i = 0; i < ar.length; i++) {
+//			dupe.add(ar[i]);
+//		}
+//		for (Integer filter : dupe) {
+//			System.out.println(filter);
+//		}
+
+//		String string = "Hello";
+//		String rev = "";
+//		for(int i = string.length()-1 ; i>=0; i--) {
+//			rev = rev + string.charAt(i);
+//		}	
+//			System.out.println(rev);
+
+//		int fa =153;
+//		int st = 0;
+//		int temp =fa;
+//		
+//		while(fa>0) {
+//			 int n = fa%10;
+//			  st= st +(n*n*n);
+//			fa= fa/10;
+//		}
+//		
+//		System.out.println(st);
+
+//		String s = "Hello hi this gokul";
+//		String[] rev = s.split(" 	");
+//		int l = rev.length;
+//		System.out.println(l);
+
+//		String s1 = "Gokul@123";
+//		int s=0, C=0, n=0, ch=0;
+//		
+//		for(int i =0; i<s1.length(); i++) {
+//			char a = s1.charAt(i);
+//			if(a>=97&&a<=122) {
+//				s++;
+//			}
+//			if(a>=65&&a<=90) {
+//				C++;
+//			}
+//			if(a>=48&&a<=57) {
+//				n++;
+//			}
+//			else{
+//				ch++;
+//			}
+//		}
+//		System.out.println(s);
+//		System.out.println(C);
+//		System.out.println(n);
+//		System.out.println(ch);
+
+	
+			
+		
+
+	}}
+
+

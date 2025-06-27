@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+	<configuration>
+		<!-- Report theme: standard or dark -->
+		<theme>dark</theme>
+
+		<!-- Document encoding (default: UTF-8) -->
+		<encoding>UTF-8</encoding>
+
+		<!-- Protocol for loading resources -->
+		<protocol>https</protocol>
+
+		<!-- HTML document title (browser tab) -->
+		<documentTitle>Spark Extent</documentTitle>
+
+		<!-- Report name shown at the top -->
+		<reportName>Grasshopper Report</reportName>
+
+		<!-- Offline mode: true to bundle all resources locally -->
+		<offlineMode>true</offlineMode>
+
+		<!-- Optional: Embed custom JavaScript -->
+		<js></js>
+
+		<!-- Optional: Embed custom CSS -->
+		<css></css>
+	</configuration>
+</extentreports>

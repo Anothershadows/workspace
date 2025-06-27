@@ -1,11 +1,9 @@
 runner\Runner.class
-base\testdrive.class
 Pages\LoginStep.class
-POJO\flipproduct.class
-runner\Runner_irda.class
-base\reusable.class
 POJO\palasibazar.class
+Pages\palasibazarpage.class
+base\testdrive.class
+base\reusable.class
 POJO\Login.class
 Pages\irda.class
-Pages\palasibazarpage.class
 POJO\irdaPOJO.class

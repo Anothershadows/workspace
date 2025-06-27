@@ -3,14 +3,20 @@ package javaqa;
 public class rework {
 
 	public static void main(String[] args) {
-		int a=5;
-		int b=1;
-	while (a>0) {	
-		 b=b*a;		
-		a=a-1;		
-	}
-	System.out.println(b);
-	}
-	}
+
+		for (int i = 1; i <= 20; i++) {
+			int temp = 0;
+
+			for (int j = 2; j <= i/2;j++) {
+
+				if (i%j==0) {
+					temp++;
+				}}
+				if (temp ==0)
+					System.out.println(i);
+				}
+			}
+		}
+	
 
 

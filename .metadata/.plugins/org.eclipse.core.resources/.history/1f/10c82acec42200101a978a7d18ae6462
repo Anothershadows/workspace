@@ -1,0 +1,17 @@
+package java_workout;
+
+public class test {
+
+	public static void main(String[] args) {
+		int k = 1234563;
+		int l = 0;
+		while (k>0) {
+			int j = k%10;
+			l =l+j;
+				k=k/10;					
+				}
+		System.out.println(l);	
+
+	}
+
+}

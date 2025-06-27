@@ -1,0 +1,10 @@
+package java_workout;
+
+public class count_odd_number {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

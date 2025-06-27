@@ -1,0 +1,36 @@
+package java_workout;
+
+public class test {
+
+	public static void main(String[] args) {
+
+		String s = "Hello hi this gokul";
+		String[] rev = s.split(" 	");
+		int l = rev.length;
+		System.out.println(l);
+
+		String s1 = "Gokul@123";
+		int sw = 0, C = 0, n = 0, ch = 0;
+
+		for (int i = 0; i < s1.length(); i++) {
+			char a = s1.charAt(i);
+			if (a >= 97 && a <= 122) {
+				sw++;
+			}
+			if (a >= 65 && a <= 90) {
+				C++;
+			}
+			if (a >= 48 && a <= 57) {
+				n++;
+			} else {
+				ch++;
+			}
+		}
+		System.out.println(sw);
+		System.out.println(C);
+		System.out.println(n);
+		System.out.println(ch);
+
+	}
+
+}

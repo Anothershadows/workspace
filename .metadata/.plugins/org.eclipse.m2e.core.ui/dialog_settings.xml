@@ -27,6 +27,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="learn.TestNG_framework"/>
 			<item value="learn"/>
 			<item value="learn.cuc"/>
 			<item value="Automation.Automationqa"/>
@@ -37,6 +38,7 @@
 			<item value="Automation"/>
 		</list>
 		<list key="artifactId">
+			<item value="TestNG_framework"/>
 			<item value="cuc"/>
 			<item value="sep"/>
 			<item value="Automationqa"/>
